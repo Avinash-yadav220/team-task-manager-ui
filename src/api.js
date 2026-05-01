@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000',
+  // Make sure https:// is right here! 👇
+  baseURL: 'https://team-task-manager-api-production.up.railway.app', 
 });
 
 api.interceptors.request.use((config) => {
